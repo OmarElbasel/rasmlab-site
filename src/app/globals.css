@@ -127,3 +127,10 @@ body {
   33% { transform: translate(18%, 10%) scale(1.15); }
   66% { transform: translate(-8%, 16%) scale(0.9); }
 }
+
+/* Phone mockups in Work: scroll a full-page capture through the screen.
+   --scroll is set per project from the capture's height. */
+@keyframes phone-scroll {
+  0%, 6% { transform: translateY(0); }
+  94%, 100% { transform: translateY(var(--scroll)); }
+}
