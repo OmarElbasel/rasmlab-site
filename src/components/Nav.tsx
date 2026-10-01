@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { gsap, ScrollTrigger, useGSAP, onIntro } from "@/lib/gsap";
 import { getLenis } from "./SmoothScroll";
 import Magnetic from "./Magnetic";
+import { LogoMark } from "./Logo";
 
 const links = [
   { href: "#services", label: "Services" },
@@ -52,10 +53,14 @@ export default function Nav() {
         <a
           href="#top"
           onClick={(e) => go(e, "#top")}
-          className="nav-item block text-xl font-bold tracking-[-0.04em]"
+          aria-label="Rasmlab home"
+          className="nav-item flex items-center gap-2 text-xl font-bold tracking-[-0.04em]"
         >
-          rasm<span className="serif font-normal">lab</span>
-          <sup className="ml-0.5 text-[0.55em]">®</sup>
+          <LogoMark className="h-[1.05em] w-auto" />
+          <span>
+            rasm<span className="serif font-normal">lab</span>
+            <sup className="ml-0.5 text-[0.55em]">®</sup>
+          </span>
         </a>
       </div>
 
