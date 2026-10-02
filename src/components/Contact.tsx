@@ -5,6 +5,7 @@ import { gsap, SplitText, useGSAP } from "@/lib/gsap";
 import Magnetic from "./Magnetic";
 
 const EMAIL = "rasmlabs@gmail.com";
+const GMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}&su=${encodeURIComponent("Project Inquiry")}`;
 const socials = [
   { label: "Instagram", href: "#" },
   { label: "LinkedIn", href: "#" },
@@ -59,7 +60,9 @@ export default function Contact() {
 
         <Magnetic strength={0.45}>
           <a
-            href={`mailto:${EMAIL}?subject=Project%20Inquiry`}
+            href={GMAIL_COMPOSE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             data-cursor-hide
             className="cta-btn flex h-40 w-40 items-center justify-center rounded-full bg-ink text-center text-paper transition-colors duration-500 hover:bg-accent hover:text-ink md:h-52 md:w-52"
           >
@@ -73,7 +76,12 @@ export default function Contact() {
       <div className="mt-24 grid gap-10 border-t border-ink/15 pt-8 md:grid-cols-4">
         <div>
           <span className="label text-ink/50">Email</span>
-          <a href={`mailto:${EMAIL}`} className="mt-2 block text-xl font-medium underline-offset-4 hover:underline">
+          <a
+            href={GMAIL_COMPOSE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 block text-xl font-medium underline-offset-4 hover:underline"
+          >
             {EMAIL}
           </a>
         </div>
