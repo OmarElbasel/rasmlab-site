@@ -27,5 +27,5 @@ Remove `placeholder: true` once a slot has real content.
 
 ## Still placeholder
 
-- Contact email (`hello@rasmlab.com`) and social links in `src/components/Contact.tsx`
+- Contact email (`rasmlabs@gmail.com`) and social links in `src/components/Contact.tsx`
 - Both portfolio entries

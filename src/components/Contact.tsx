@@ -4,8 +4,7 @@ import { useRef } from "react";
 import { gsap, SplitText, useGSAP } from "@/lib/gsap";
 import Magnetic from "./Magnetic";
 
-// TODO: swap in the real inbox and social handles.
-const EMAIL = "hello@rasmlab.com";
+const EMAIL = "rasmlabs@gmail.com";
 const socials = [
   { label: "Instagram", href: "#" },
   { label: "LinkedIn", href: "#" },
@@ -60,7 +59,7 @@ export default function Contact() {
 
         <Magnetic strength={0.45}>
           <a
-            href={`mailto:${EMAIL}`}
+            href={`mailto:${EMAIL}?subject=Project%20Inquiry`}
             data-cursor-hide
             className="cta-btn flex h-40 w-40 items-center justify-center rounded-full bg-ink text-center text-paper transition-colors duration-500 hover:bg-accent hover:text-ink md:h-52 md:w-52"
           >
