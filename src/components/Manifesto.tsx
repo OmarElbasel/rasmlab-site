@@ -37,8 +37,9 @@ export default function Manifesto() {
         <span className="label text-paper/60">(Who we are)</span>
       </div>
       <p className="manifesto-text max-w-[22ch] text-[8.5vw] font-medium leading-[1.02] tracking-[-0.045em] md:max-w-[26ch] md:text-[5.4vw]">
-        In Arabic, <span className="font-arabic text-accent">رسم</span> means to draw. We sketch ideas into
-        websites people remember, apps people keep, and AI visuals nobody has seen before.
+        We treat every project as a piece of <span className="serif text-accent">art</span>. Websites, apps
+        and AI visuals crafted with care, where every pixel, every line of code and every frame is made
+        with intent.
       </p>
     </section>
   );
