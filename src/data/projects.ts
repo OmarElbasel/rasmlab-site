@@ -28,13 +28,30 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "cielo-denim",
+    title: "Cielo Denim",
+    client: "Cielo Denim",
+    year: "2026",
+    services: ["Web Development"],
+    summary:
+      "A denim label with a varsity streak. Shop-by-fit navigation, shoppable lookbooks and worldwide shipping, wrapped in bold red and white that carries the badge logo across every page.",
+    url: "https://www.cielodenim.com/",
+    shots: { desktop: "/work/cielo-desktop.jpg", mobile: "/work/cielo-mobile.jpg", mobileHeight: 8727 },
+    theme: {
+      bg: "#f8efef",
+      glow: ["#e2313a", "#f3b8bf"],
+      ink: "#2b1418",
+      wordmarkClass: "font-bold uppercase tracking-[-0.04em]",
+    },
+  },
+  {
     slug: "area-code",
     title: "Area Code",
     client: "Area Code",
     year: "2026",
     services: ["E-commerce", "Web Design", "Development"],
     summary:
-      "A storefront for an Alexandria-born casual-wear label. Editorial imagery, drop-based collections and a checkout that rewards Visa and Apple Pay, all in a soft monochrome built to let the product speak.",
+      "A storefront for a casual-wear label. Editorial imagery, drop-based collections and a checkout that rewards Visa and Apple Pay, all in a soft monochrome built to let the product speak.",
     url: "https://areacodeeg.com/",
     shots: { desktop: "/work/areacode-desktop.jpg", mobile: "/work/areacode-mobile.jpg", mobileHeight: 9164 },
     theme: {
