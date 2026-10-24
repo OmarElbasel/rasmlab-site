@@ -7,7 +7,7 @@ import Magnetic from "./Magnetic";
 const EMAIL = "rasmlabs@gmail.com";
 const GMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}&su=${encodeURIComponent("Project Inquiry")}`;
 const socials = [
-  { label: "Instagram", href: "#" },
+  { label: "Instagram", href: "https://www.instagram.com/rasmlabs/" },
   { label: "LinkedIn", href: "#" },
   { label: "Behance", href: "#" },
   { label: "GitHub", href: "https://github.com/OmarElbasel" },
